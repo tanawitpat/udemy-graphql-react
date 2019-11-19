@@ -15,7 +15,7 @@ const app = express();
 const MONGO_USER = "admin"
 const MONGO_PASSWORD = "X7KQyhHUYQrL69ZP"
 
-const MONGO_URI = `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@udemy-graphql-react-fuyxd.mongodb.net/test?retryWrites=true&w=majority`;
+const MONGO_URI = `mongodb://${MONGO_USER}:${MONGO_PASSWORD}@udemy-graphql-react-shard-00-00-fuyxd.mongodb.net:27017,udemy-graphql-react-shard-00-01-fuyxd.mongodb.net:27017,udemy-graphql-react-shard-00-02-fuyxd.mongodb.net:27017/test?ssl=true&replicaSet=udemy-graphql-react-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 // Mongoose's built in promise library is deprecated, replace it with ES2015 Promise
 mongoose.Promise = global.Promise;
